@@ -8,16 +8,21 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    // {
+    //   path: '/',
+    //   name: 'Back',
+    //   component: Back
+    // },
     {
       path: '/',
-      name: 'Back',
-      component: Back
-    },
-    {
-      path: '/Home',
       name: 'Home',
       component: Home
     },
+    // {
+    //   path: '/Home',
+    //   name: 'Home',
+    //   component: Home
+    // },
     {
       path: '/Download',
       name: 'Download',
