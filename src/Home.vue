@@ -65,7 +65,7 @@
           <!-- <el-button @click="resetForm('ruleForm')">重置</el-button> -->
       </el-form>
     </div>
-          <div class="footer">已注册链点账号，<span @click="loadfun">请直接下载</span></div>
+          <div class="footer">已注册Crypto EX账号，<span @click="loadfun">请直接下载</span></div>
   </div>
 </template>
 
