@@ -2,8 +2,8 @@
   <div>
     <div class="loadbox">
       <img src="./assets/ldlogo.png" class="el-image__inner">
-      <h3>链点量投</h3>
-      <h2>无惧涨跌，穿越牛熊</h2>
+      <h3>Crypto EX</h3>
+      <!-- <h2>无惧涨跌，穿越牛熊</h2> -->
       <a href="#" @click="download" class="downbtn" >点击下载</a>
     </div>
   </div>
