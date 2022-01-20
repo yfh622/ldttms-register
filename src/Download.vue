@@ -23,7 +23,7 @@ export default {
   methods: {
    download(){
     // down('http://47.57.102.137:5138/v1/upgrade/latestVersion',{}).then(res=>{
-    down('http://www.chainai.club:8088/v1/upgrade/latestVersion',{}).then(res=>{
+    down('http://www.cryptoglobal.cc:8088/v1/upgrade/latestVersion',{}).then(res=>{
           if(res.code == 200){
             console.log(res)
             window.location.href=res.data.apkUrl
