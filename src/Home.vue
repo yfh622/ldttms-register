@@ -13,8 +13,8 @@
           <!-- <el-form-item label=" " prop='subaccountId' label-width="60px"> -->
             <el-form-item label="" prop="phoneNumber">
             <div class="phone formitem">
-              <span>+86 <i style="margin:0 4px 0 4px" class="el-icon-arrow-down"></i></span>
-              <el-input class="ipt" placeholder="请输入手机号" style="width:70%" type="text" v-model="ruleForm.phoneNumber" autocomplete="off"></el-input>
+              <!-- <span>+86 <i style="margin:0 4px 0 4px" class="el-icon-arrow-down"></i></span> -->
+              <el-input class="ipt" placeholder="请输入手机号或邮箱" style="width:70%" type="text" v-model="ruleForm.phoneNumber" autocomplete="off"></el-input>
             </div>
         </el-form-item>
         <!-- </el-form-item> -->
@@ -76,13 +76,16 @@ export default {
   data() {
     var checkAge = (rule, value, callback) => {
       if (value=="") {
-        return callback(new Error("手机号不能为空"));
+        return callback(new Error("请填写手机号或邮箱"));
       }else{
         let reg = /^1\d{10}$/
+        let reg2 = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
          if (reg.test(value)) {
           callback();
+        }else if(reg2.test(value)){
+          callback();
         }else{
-          callback(new Error("请输入正确的手机号"));
+          callback(new Error("请输入正确的手机号或邮箱"));
         }
       }
     };
